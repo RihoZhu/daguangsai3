@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>欢迎解锁京东超能世界</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+	
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+  <script type="text/javascript">
+          window.onload = function() {
+              document.getElementById('div1').addEventListener('click', function() {
+                  document.getElementById('img1').src = document.getElementById('img1').src;
+				  
+              });
+          }
+		  var t = 0;
+	function edit1(){
+		document.getElementById('bg1').style.backgroundImage="url(img/雨过天晴.gif)"
+		document.getElementById('bt1').style.display="none";
+		
+	}
+	function edit2(){
+		document.getElementById('bg2').style.backgroundImage="url(img/8-1-2开窗户.gif)";
+		document.getElementById('im1').style.display="none";
+		document.getElementById('im2').style.display="block";
+	}
+	function edit3(){
+		document.getElementById('bg2').style.backgroundImage="url(img/8-3-2点按钮后快速出纸.gif)";
+		document.getElementById('bt3').style.display="none";
+		document.getElementById('bt4').style.pointerEvents="none";
+		document.getElementById('im2').style.display="none";
+	}
+	function edit4(){
+		document.getElementById('bg3').style.backgroundImage="url(./img/11-2-1-点了京东按钮以后.gif)";
+		document.getElementById('bt5').style.display="none";
+		
+	}
+	function edit5(){
+		document.getElementById('bg4').style.backgroundImage="url(./img/t" + Math.floor(Math.random()*4+1) + ".png)";
+		document.getElementById('bt6').style.display="none";
+		document.getElementById('btn4').style.display="block";
+		document.getElementById('btn5').style.display="block";
+	}
+	function edit6(){
+		if(t == 2)
+			document.getElementById('bt3').style.display="block";
+		switch(t){
+			case 0:
+			document.getElementById('bg2').style.backgroundImage="url(img/8-2-11.gif)";
+			t++;
+			break;
+			case 1:
+			document.getElementById('bg2').style.backgroundImage="url(img/8-2-12.gif)";
+			t++;
+			break;
+			case 2:
+			document.getElementById('bg2').style.backgroundImage="url(img/8-2-13.gif)";
+			t++;
+			break;
+			case 3:
+			document.getElementById('bg2').style.backgroundImage="url(img/8-2-14.gif)";
+			t++;
+			break;
+			case 4:
+			document.getElementById('bg2').style.backgroundImage="url(img/8-2-15.gif)";
+			t++;
+			break;
+		}
+		
+		
+	}
+	function save(){
+		function save() {
+		
+		    
+		
+		}
+	}
+  </script>
+
+</head>
+<body>
+  <!-- Swiper -->
+ 
+  <div class="swiper-container" >
+	
+	  <audio controls id="music" style="display: none;">
+	    <source src="img/bgm.mp3" >
+	  </audio>
+	  
+    <div class="swiper-wrapper">
+	  <div class="swiper-slide swiper-no-swiping" style="background-image: url(img/首页.png);background-size: 100% 100%;">
+		  <a class="default" href="#" id="btn2"> <img src="img/进入世界.png" style="width: 42%;height: auto;position: absolute;left: 30%;top: 75%;" onclick="edit10()"></a>
+		  
+	  </div>
+      
+      <div class="swiper-slide" ><img src="img/2.png" style="width: 100%;height: 100%;"></div>
+      <div class="swiper-slide" ><img src="img/3.png" style="width: 100%;height: 100%;"></div>
+      <div class="swiper-slide" ><img src="img/4.png" style="width: 100%;height: 100%;"></div>
+	  <div class="swiper-slide" style="background-image: url(img/下雨场景.gif);background-size: 100% 100%;" id="bg1">
+	  <img src="img/京东按钮单独.gif" id="bt1" style="width: 23%;height: auto;position: absolute;left: 68%;top: 18%;" onclick="edit1()"></div>
+	  <div class="swiper-slide" ><img src="img/6.png" style="width: 100%;height: 100%;"></div>
+	  <div class="swiper-slide" ><img src="img/7.png" style="width: 100%;height: 100%;"></div>
+	  <div class="swiper-slide" style="background-image:url(img/8-1-1%20第一帧.png); background-size: 100% 100%;" id="bg2"><img src="./img/点击引导.gif" style="width: 10%;height: auto;position: absolute;left:75%;top:40%" onclick="edit2()" id="im1">
+      <img src="./img/点击引导.gif" style="width: 7%;height: auto;position: absolute;left:60%;top:34.5%;display: none;" onclick="edit6()" id="im2">
+	  <img src="img/京东按钮单独.gif" id="bt3" style="width: 20%;height: auto;margin-left: 68.75%;margin-top: 17.76%;display: none;" onclick="edit3()">
+	  <button id="bt4" style="width: 640px;height: 764px;border: none;outline: none;margin-top: 90px;" onclick="edit2()">
+		  
+	  </button></div>
+	  <div class="swiper-slide" style="background-image:url(img/9.png);background-size: 100% 100%;"></div>
+	  <div class="swiper-slide" style="background-image:url(img/10.png);background-size: 100% 100%;"></div>
+	  <div class="swiper-slide" style="background-image:url(img/11-1-2.gif);background-size: 100% 100%;" id="bg3"><img src="img/京东按钮单独.gif" id="bt5" style="width: 20%;height: auto;margin-left: 68.75%;margin-top: 17.76%;" onclick="edit4()"></div>
+	  <div class="swiper-slide" style="background-image:url(img/12.png);background-size: 100% 100%;"></div>
+	  <div class="swiper-slide" style="background-image:url(img/13.png);background-size: 100% 100%;"></div>
+	  <div class="swiper-slide" style="background-image:url(img/14-生成超能力.gif);background-size: 100% 100%;" id="bg4"><img src="img/微信图片_20200608174001.png" id="bt6" style="width: 50%;height: auto;position: absolute;top: 75%;left:25%" onclick="edit5()">
+	  <img src="img/返回首页.png" id="btn4" style="width: 30%;height: auto;position: absolute;left: 12%;top: 85%;display: none;" onclick="javascript:location.reload();">
+	  <img src="img/保存图片.png" id="btn5" style="width: 30%;height: auto;position: absolute;left: 57%;top: 85%;display: none;" οnclick="save()">
+	  </div>
+    </div>
+    <!-- Add Pagination -->
+
+    <!-- Add Arrows -->
+
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      preloadImages:true,
+	  freeMode : true,
+      spaceBetween: 0,
+      effect: 'slide',
+	  
+    })
+	function edit10(){
+		swiper.slideNext();
+		swiper.removeSlide(0);
+		var audio = document.getElementById('music'); 
+		     if(audio.paused){                 
+		         audio.play();//audio.play();// 播放bai  
+		     }
+		     else{
+		          audio();
+		     } 
+	}
+  </script>
+  
+</body>
+</html>
